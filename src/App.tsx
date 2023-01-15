@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Button from './components/styled/buttons/Button'
+import { Button } from './components/styled/buttons'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,10 +18,36 @@ function App() {
       </div>
       <h1>Vite + React + Component Library</h1>
       <div className="card">
+        <div>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <Button></Button>
+        </div>
+        <br />
+        <Button
+          bgColor="blue"
+          textColor='white' 
+          text='Primary' 
+          onClick={() => alert("Primary Clicked")} 
+        />
+        <Button
+          bgColor="white"
+          textColor='blue'
+          text='Secondary' 
+          onClick={() => alert("Secondary Clicked")} 
+        />
+        <Button
+          bgColor="red"
+          textColor='white'
+          text='Cancel' 
+          onClick={() => alert("Primary Cancel Clicked")} 
+        />
+        <Button
+          bgColor="white"
+          textColor='red'
+          text='Cancel' 
+          onClick={() => alert("Secondary Cancel Clicked")} 
+        />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
