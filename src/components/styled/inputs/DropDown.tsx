@@ -1,6 +1,6 @@
 
 const DropDown = (): JSX.Element => {
-    return (
+  return (
         <>
             <label>Dropdown Label</label>
             <select>
@@ -9,7 +9,7 @@ const DropDown = (): JSX.Element => {
                 <option>3</option>
             </select>
         </>
-    )
+  )
 }
 
 export default DropDown

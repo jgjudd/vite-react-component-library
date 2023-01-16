@@ -1,11 +1,8 @@
-import { useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import { LandingPage, StyledComponents, Material, Tailwind } from './pages'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App (): JSX.Element {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />

@@ -1,11 +1,11 @@
 
 const TextInput = (): JSX.Element => {
-    return (
+  return (
         <>
             <label>Text Label</label>
             <input type="text" />
         </>
-    )
+  )
 }
 
 export default TextInput

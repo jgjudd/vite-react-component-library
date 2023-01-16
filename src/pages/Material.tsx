@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
-const Material = () => {
+const Material = (): JSX.Element => {
   return (
     <div>
       <div>

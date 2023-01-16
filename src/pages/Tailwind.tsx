@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
-const Tailwind = () => {
+const Tailwind = (): JSX.Element => {
   return (
     <div>
       <div>

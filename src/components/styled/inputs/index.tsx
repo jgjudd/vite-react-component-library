@@ -1,7 +1,7 @@
-import TextInput from "./TextInput";
-import DropDown from "./DropDown";
+import TextInput from './TextInput'
+import DropDown from './DropDown'
 
 export {
-    DropDown,
-    TextInput
+  DropDown,
+  TextInput
 }
