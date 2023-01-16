@@ -1,16 +1,10 @@
 import { Button } from '../components/styled/buttons'
 import { DropDown, TextInput } from '../components/styled/inputs'
-import { Link } from 'react-router-dom'
 import RadioGroup from '../components/styled/inputs/RadioGroup'
 
 const StyledComponents = (): JSX.Element => {
   return (
     <div>
-      <div>
-        <Link to='/'>Home</Link>
-        <Link to='/material'>Material</Link>
-        <Link to='/tailwind'>Tailwind</Link>
-      </div>
       <div>
         <h4>Buttons</h4>
         <Button
