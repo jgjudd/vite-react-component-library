@@ -1,6 +1,7 @@
 import { Button } from '../components/styled/buttons'
 import { DropDown, TextInput } from '../components/styled/inputs'
 import { Link } from 'react-router-dom'
+import RadioGroup from '../components/styled/inputs/RadioGroup'
 
 const StyledComponents = (): JSX.Element => {
   return (
@@ -40,9 +41,11 @@ const StyledComponents = (): JSX.Element => {
       <br />
       <div>
         <h4>Inputs</h4>
-        <TextInput />
+        <TextInput label="This is a text label" />
         <br />
-        <DropDown />
+        <DropDown text="How many do you want?" options={['1', '5', '10', '15', '20', '50+']} />
+        <br />
+        <RadioGroup text="Did you vote?" choices={['yes', 'no', 'maybe']} />
       </div>
     </div>
   )

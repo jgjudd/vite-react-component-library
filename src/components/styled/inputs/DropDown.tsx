@@ -1,12 +1,20 @@
+interface DropDownType {
+  text: string
+  options: string[]
+}
 
-const DropDown = (): JSX.Element => {
+const DropDown = ({ text, options }: DropDownType): JSX.Element => {
   return (
         <>
-            <label>Dropdown Label</label>
+            <label>{text}</label>
             <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
+              {
+                options.map(option => {
+                  return (
+                    <option key={option}>{option}</option>
+                  )
+                })
+              }
             </select>
         </>
   )

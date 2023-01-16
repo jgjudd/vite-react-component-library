@@ -1,8 +1,10 @@
-
-const TextInput = (): JSX.Element => {
+interface TextType {
+  label: string
+}
+const TextInput = ({ label }: TextType): JSX.Element => {
   return (
         <>
-            <label>Text Label</label>
+            <label>{label}</label>
             <input type="text" />
         </>
   )
