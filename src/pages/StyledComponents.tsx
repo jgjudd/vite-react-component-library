@@ -10,34 +10,40 @@ const StyledComponents = (): JSX.Element => {
         <Link to='/material'>Material</Link>
         <Link to='/tailwind'>Tailwind</Link>
       </div>
-      <Button
-        bgColor="blue"
-        textColor='white'
-        text='Primary'
-        onClick={() => { alert('Primary Clicked') }}
-      />
-      <Button
-          bgColor="white"
-          textColor='blue'
-          text='Secondary'
-          onClick={() => { alert('Secondary Clicked') }}
-      />
-      <Button
-          bgColor="red"
+      <div>
+        <h4>Buttons</h4>
+        <Button
+          bgColor="blue"
           textColor='white'
-          text='Cancel'
-          onClick={() => { alert('Primary Cancel Clicked') }}
-      />
-      <Button
-          bgColor="white"
-          textColor='red'
-          text='Cancel'
-          onClick={() => { alert('Secondary Cancel Clicked') }}
-      />
+          text='Primary'
+          onClick={() => { alert('Primary Clicked') }}
+        />
+        <Button
+            bgColor="white"
+            textColor='blue'
+            text='Secondary'
+            onClick={() => { alert('Secondary Clicked') }}
+        />
+        <Button
+            bgColor="red"
+            textColor='white'
+            text='Cancel'
+            onClick={() => { alert('Primary Cancel Clicked') }}
+        />
+        <Button
+            bgColor="white"
+            textColor='red'
+            text='Cancel'
+            onClick={() => { alert('Secondary Cancel Clicked') }}
+        />
+      </div>
       <br />
-      <TextInput />
-      <br />
-      <DropDown />
+      <div>
+        <h4>Inputs</h4>
+        <TextInput />
+        <br />
+        <DropDown />
+      </div>
     </div>
   )
 }

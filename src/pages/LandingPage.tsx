@@ -1,11 +1,24 @@
 import { Link } from 'react-router-dom'
+import Card from '../components/styled/cards/Card'
 
 const LandingPage = (): JSX.Element => {
   return (
-        <div>
-            <Link to='/styled'>Styled Components</Link>
-            <Link to='/material'>Material UI</Link>
-            <Link to='/tailwind'>Tailwind</Link>
+        <div style={{ display: 'flex' }}>
+          <Link to='/styled'>
+            <Card>
+              Styled Components
+            </Card>
+          </Link>
+          <Link to='/material'>
+            <Card>
+              Material UI
+            </Card>
+          </Link>
+          <Link to='/tailwind'>
+            <Card>
+              Tailwind
+            </Card>
+          </Link>
         </div>
   )
 }
